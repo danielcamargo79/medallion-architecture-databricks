@@ -78,20 +78,11 @@ case-engenharia-dados-databricks/
 
 │   ├── documentacao\_tecnica.md
 
-
-
 │   ├── resumo\_executivo.md
-
-
 
 |   ├── arquitetura.md
 
-
-
 |   └── modelo\_analitico.md
-
-
-│
 
 └── sources/
 
