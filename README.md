@@ -52,41 +52,41 @@ O objetivo principal é permitir análises de performance comercial, operacional
 
 ```text
 
-case-engenharia-dados-databricks/
-
+medallion-architecture-databricks/
 │
-
-├── README.md
-
-│
-
 ├── notebooks/
-
-│   ├── 00\_setup\_discovery.ipynb
-
-│   ├── 01\_bronze\_ingestao.ipynb
-
-│   ├── 02\_silver\_tratamento.ipynb
-
-│   ├── 03\_gold\_modelagem.ipynb
-
-│   └── 04\_validacoes\_qualidade.ipynb
-
+│   ├── 00_setup_discovery.ipynb
+│   ├── 01_bronze_ingestao.ipynb
+│   ├── 02_silver_tratamento.ipynb
+│   ├── 03_gold_modelagem.ipynb
+│   └── 04_validacoes_qualidade.ipynb
 │
-
+├── config/
+│   ├── config.dev.yml
+│   └── config.prod.example.yml
+│
 ├── docs/
-
-│   ├── documentacao\_tecnica.md
-
-│   ├── resumo\_executivo.md
-
-|   ├── arquitetura.md
-
-|   └── modelo\_analitico.md
-
-└── sources/
-
-    └── README\_sources.md
+│   ├── arquitetura.md
+│   ├── modelo_analitico.md
+│   ├── qualidade_dados.md
+│   ├── productionization.md
+│   └── resumo_executivo.md
+│
+├── assets/
+│   ├── architecture/
+│   └── screenshots/
+│
+├── sources/
+│   └── README_sources.md
+│
+├── .github/
+│   └── workflows/
+│       └── markdown-check.yml
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── LICENSE
 
 ```
 
