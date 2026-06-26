@@ -1,0 +1,26 @@
+name: Markdown Check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-project-structure:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate required files and folders
+        run: |
+          test -f README.md
+          test -f requirements.txt
+          test -d docs
+          test -d notebooks
+          test -d config
+          test -f config/config.dev.yml
+          test -f config/config.prod.example.yml
+          test -f docs/productionization.md

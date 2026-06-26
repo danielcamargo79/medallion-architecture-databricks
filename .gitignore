@@ -1,0 +1,19 @@
+__pycache__/
+.ipynb_checkpoints/
+.env
+*.log
+*.tmp
+.DS_Store
+
+# Dados locais ou sensíveis
+data/
+*.csv
+*.xlsx
+*.json
+*.ndjson
+*.txt
+
+# Arquivos temporários
+*.parquet
+*.delta
+*.zip
