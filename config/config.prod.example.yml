@@ -1,0 +1,18 @@
+env: prod
+
+catalog: data_platform
+
+schemas:
+  bronze: bronze
+  silver: silver
+  gold: gold
+
+paths:
+  raw: /mnt/raw/source_system
+  bronze: /mnt/delta/bronze
+  silver: /mnt/delta/silver
+  gold: /mnt/delta/gold
+
+execution:
+  load_mode: incremental
+  process_date: "{{ job_parameter_process_date }}"
